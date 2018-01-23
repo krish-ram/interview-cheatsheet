@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Pattern</title>
+	<script type="text/javascript">
+		var CountPS(str, i, j) {
+			if (i+1 == j) {
+				return str[i] == str[j];
+			} else {
+				return countPS(str, i+1, j) + countPS(str, i, j-1) + 1 - countPS(str, i+1, j-1);
+			} else {
+				return  countPS(str, i+1, j) + countPS(str, i, j-1) - countPS(str, i+1 , j-1);
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

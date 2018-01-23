@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max Product Sub Array </title>
+	<script type="text/javascript">
+		
+		function maxProduct(nums) {
+		    var max = [], min = [];
+		 
+		    max[0] = min[0] = nums[0];
+		    var result = nums[0];
+		    var minResult = nums[0];
+		 
+		    for(var i=1; i<nums.length; i++){
+		        if(nums[i] > 0){
+		            max[i]=Math.max(nums[i], max[i-1]*nums[i]);
+		            //console.log(111, nums[i], max[i-1]*nums[i]);
+		            min[i]=Math.min(nums[i], min[i-1]*nums[i]);
+		            //console.log(222, nums[i], min[i-1]*nums[i]);
+		        }else{
+		            max[i]=Math.max(nums[i], min[i-1]*nums[i]);
+		            //console.log(333, nums[i], min[i-1]*nums[i]);
+		            min[i]=Math.min(nums[i], max[i-1]*nums[i]);
+		            //console.log(444, nums[i], max[i-1]*nums[i]);
+		        }
+		 
+		        result = Math.max(result, max[i]);
+		        minResult = Math.min(result, min[i]);
+
+		    }
+		    console.log(result, minResult);
+		}
+		var arr = [-1, -2, 10, -10];
+
+		maxProduct(arr);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

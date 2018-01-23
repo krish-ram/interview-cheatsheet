@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Pattern</title>
+	<script type="text/javascript">
+		var printStars = function(n) {
+			var j, k=(2*n)-2;
+			var str="";
+			for (var i=0; i<n; i++) {
+				for(j=0; j<k; j++)
+					str+=" ";
+
+				k = k - 2;
+				for(j=0; j<=i; j++)
+	                str+="* ";
+
+	            str+="\n";
+			}
+			console.log(str);
+		}
+		printStars(5);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

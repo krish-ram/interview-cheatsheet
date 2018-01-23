@@ -1,0 +1,44 @@
+<!-- / Maximum consecutive repeating character in string-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maximum consecutive repeating character in string</title>
+
+	<script type="text/javascript">
+		
+		function maxRepeating(str) {
+		    var n = str.length;
+		    var count = 0;
+		    var res = str[0];
+		    var cur_count = 1;
+		 
+		    // Traverse string except last character
+		    for (var i=0; i<n; i++) {
+		        // If current character matches with next
+		        if (i < n-1 && str[i] == str[i+1])
+		            cur_count++;
+
+				
+		 
+		        // If doesn't match, update result
+		        // (if required) and reset count
+		        else {
+		            if (cur_count > count) {
+		                count = cur_count;
+		                res = str[i];
+		            }
+		            cur_count = 1;
+		        }
+		    }
+		    console.log(res);
+		}
+
+		maxRepeating("9986961400");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

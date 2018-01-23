@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Print Pairs</title>
+
+	<script type="text/javascript">
+		function printPairs(arr, len, sum) {
+			var temp = 0;
+			var arrMap = [];
+			var pairs = [];
+
+			arr.map((val) => {
+				temp = sum-val;
+				if (temp >= 0 && arrMap[temp] == 1) {
+					pairs.push(val);
+					pairs.push(temp); 
+				} else {
+					arrMap[val] = 1;
+				}
+			});
+	
+			return pairs;
+		}
+
+		console.log(printPairs([1, 4, 45, 6, 10, 8, 8], 6, 16));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

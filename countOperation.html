@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Operation</title>
+</head>
+
+	<script type="text/javascript">
+		function countSequence(strArr1, strArr2) {
+
+			var count = 0;
+			function replace(index1, index2) {
+				strArr1[index1] = strArr2[index2];
+				return strArr1;
+			}
+
+			function insert() {
+				for(var i=0; i<strArr2.length; i++) {
+					if (var ind = strArr1.indexOf(strArr2[i])) {
+						
+					}
+				}
+			}
+
+			if (strArr1.length == strArr2.length) {
+				for(var i=0; i<strArr2.length; i++) {
+					if (strArr1[i] !== strArr2[i]) {
+						count++;
+						replace(i, i);
+					}
+				}
+			}
+
+			if (strArr2.length > strArr1.length) {
+				var allCount = 0;
+				for(var i=0; i<strArr1.length; i++) {
+					if (strArr2.indexOf(strArr1[i])) {
+						allCount++;
+					}
+				}
+				if (allCount == strArr1.length) {
+					insert();
+				} else {
+					insertAndReplace()
+				}
+			}
+
+
+			console.log(count, strArr1);
+
+		}
+		console.log(countSequence("geek".split(""), "gaek".split("")));
+
+
+	</script>
+<body>
+
+</body>
+</html>

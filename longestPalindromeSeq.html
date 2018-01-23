@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Longest palindromic sequence</title>
+
+	<script type="text/javascript">
+		function max (x, y) {
+			return x>y?x:y;
+		}
+
+		function lps(stringArr, x, y) {
+			console.log(x, y);
+			if (x == y) {
+				console.log("x", x, y);
+				return 1;
+			}
+			if ((stringArr[x] == stringArr[y]) && (x+1 == y)){
+				console.log("y", x, y);
+				return 2;
+			}
+
+			if (stringArr[x] == stringArr[y]) {
+				console.log("z", x, y);
+				lps(stringArr, x+1, y-1);
+			} else {
+				return max(lps(stringArr, x, y-1), lps(stringArr, x+1, y));
+			}
+		}
+
+		console.log(lps(['a', 'm', 'a', 'd', 'a', 'm', 'a'], 0, 7));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

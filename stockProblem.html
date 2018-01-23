@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stock Buy and Sell - Max Profit</title>
+	<script>
+		
+		function stockBuySell(price, n) {
+			if (n == 1) return;
+			var count = 0, i=0;
+			var sol = [];
+
+			while (i < n-1) {
+				while ((i < n - 1) && (price[i + 1] <= price[i]))
+                	i++;
+
+	            if (i == n - 1)
+	                break;
+				var stk = {};
+				stk.buy = i++;
+
+				while((i<n) && (price[i] >= price[i-1]))
+					i++;
+				stk.sell = i-1;
+				sol.push(stk);
+				count++;
+			}
+			console.log("SOlution",  sol);
+			console.log("Count", count);
+		}
+
+		stockBuySell([100, 180, 260, 310, 40, 535, 695], 7);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

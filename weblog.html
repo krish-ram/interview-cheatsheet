@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Operation</title>
+</head>
+
+	<script type="text/javascript">
+
+		function findSeq(weblog) {
+			var newLog = [];
+			for (var i=0; i<weblog.length; i++) {
+				var log = {
+					"visitor": "",
+					"allLogs": []
+				}
+				if (newLog.hasOwnProperty(weblog[i].visitor)) {
+					newLog[key].push(weblog[i].url);
+				} else {
+					var key = weblog[i].visitor;
+
+					newLog.push({key: [weblog[i].url]});
+				}
+			}
+			console.log(newLog);
+		}
+
+		var weblog = [
+			{'visitor' : 'a', 'url': '1'},
+			{'visitor' : 'c', 'url': '5'},
+			{'visitor' : 'b', 'url': '2'},
+			{'visitor' : 'b', 'url': '1'},
+			{'visitor' : 'c', 'url': '1'},
+			{'visitor' : 'a', 'url': '3'},
+			{'visitor' : 'c', 'url': '4'},
+			{'visitor' : 'a', 'url': '5'},
+			{'visitor' : 'c', 'url': '1'},
+			{'visitor' : 'b', 'url': '2'}
+		];
+
+		console.log(findSeq(weblog));
+
+	</script>
+<body>
+
+</body>
+</html>
