@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Longest Common Subsequence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function Create2DArray(rows) {
+            var arr = [];
+            for (var i=0;i<rows;i++)
+                arr[i] = [];
+            return arr;
+        }
+        function lcs (arr1, arr2, len1, len2) {
+            console.log(arr1, arr2, len1, len2);
+            var newArr = Create2DArray(len2);
+            var i, j;
+            for (i=0; i<len1; i++) {
+                for(j=0; j<len2; j++) {
+                    if (i == 0 || j == 0) {
+                        console.log(111, newArr[i][j]);
+                        newArr[i][j] = 0;
+                    } else if (arr1[len1-1] == arr2[len2-1]){
+                        console.log(222, arr1[len1-1], arr2[len2-1]);
+                        newArr[i][j] = newArr[i-1][j-1] + 1;
+                    } else {
+                        console.log(333, arr1[len1-1], arr2[len2-1]);
+                        newArr[i][j] = Math.max(newArr[i-1][j], newArr[i][j-1]);
+                    }
+                }
+            }
+            console.log("Answer:", newArr[len1-1][len2-1]);
+            return newArr[len1][len2];
+        }
+        var str1 = "AGGTAB", str2 = "GXTXAYB";
+        lcs(str1.split(""), str2.split(""), str1.length, str2.length);
+    </script>
+</head>
+<body>
+    <h4>Longest Common Subsequence</h4>
+</body>
+</html>
