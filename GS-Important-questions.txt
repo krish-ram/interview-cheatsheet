@@ -1,0 +1,61 @@
+# 
+How do you find out the lightest stone from 9 similar looking stones in the shortest number of steps
+
+Write a program that prints out all possible pairs that can be formed from 20 dancers
+
+how to find out all the prime numbers from 1 to, say, 10000;  
+how to find out if bracket are correctly used in pairs; 
+Create a function which picks m numbers randomly from an n number array. 
+
+From which maximum floor can you throw an egg without breaking it?
+
+Write a function to return true if the array can be split into two with the same value, false otherwise. The function has to be efficient.  
+Given 9 ball with only one differ in weight, how to find out by measuring them only twice?  
+How to get the second smallest number from an array  
+
+Count unique substring of length k  
+Look through array to find pairs that sum to k
+
+Find the second largest number in the array. 
+Return the second-smallest element of a list.  
+
+Given a sorted array which has been rotated k times , need to find k
+
+A kid wants to travel up n steps. She can only go 1, 2 or 3 steps at a time. How many different ways can she get to the nth step?  
+
+If you can race only 5 horses at a time, given 20 horses , what is the lowest number of races you need to host to determine the top 3 horses
+
+Given an integer, return all sequences of numbers that sum to it. (Example: 3 -&gt; (1, 2), (2, 1), (1, 1, 1)).  
+
+You’ve got a 10 x 10 x 10 cube made up of 1 x 1 x 1 smaller cubes. You drop the cube and the whole outer layer of cubes fell off. How many cubes are left in the big cube
+
+DNA computing pairs like A and T, G and C a string is given like ATCCTGTA and we have to return reverse complement of that string TACAGGAT
+
+ In telephonic second round asked to write code to find count of number of pairs for given sum in an array  
+
+How would you print all possible permutations for the first  n(input) natural numbers
+
+2 eggs and 100 storey building puzzle
+
+Input string aaabbbbcc
+Output string a3b4c2
+
+Write a program to find the common characters in two strings. After writing the code they asked to reduce the complexity.  
+write a code to find a subset in an array which has the maximum sum. Array can have both negative and positive numbers.
+
+mplement a circular array, find whether a number is power of 2 in constant time.  
+Find whether the given number is power of 10 or not.  
+
+A robot can move in 4 directions. 'U' - UP, 'D' - DOWN, 'L'- LEFT, 'R'-RIGHT. Ignore all teh other. The position of the robot can be identified by array[x][y]. Please completed the method which returns the final position of the robot.
+private static Integer[][] findIndex(String testCase){
+return new Integer[0][0];
+}
+
+Here the testcase contains the characters like 'ULLLDDUU STRULR';
+2) A child climbing stairs which has N number of Steps. To add fun to it child can climb 1 or 2 or 3 at a time. Find the number of ways the child can climb the N number of steps? 
+
+dynamic programming (a=1,b=2 given number how many such strings are formed)
+
+Write a code to find if a string is a palindrome or not. Time complexity should be O(n).  
+ 8-Queens puzzle
+What will happen if a monkey jumps on a truck which is already loaded to capacity and is on its way from destination A to B ?
