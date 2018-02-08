@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All pair for an array</title>
+	<script type="text/javascript">
+		
+		var arr = [1, 2, 3, 4, 5];
+		var newArr = [];
+
+		// r is the length of the set. r - 2 for pair
+		function printCombination(arr, data, start, end, currIndex, r) {
+
+			if (currIndex == r) {
+				for(var j=0; j<r; j++)
+					console.log(data[j]);
+				console.log('\n');
+				return;
+			}
+
+			// replace currIndex with all possible elements. The condition
+		    // "end-i+1 >= r-currIndex" makes sure that including one element
+		    // at currIndex will make a combination with remaining element at remaining positions
+			for (var i=start; i<=end && end-i+1 >= r-currIndex; i++) {
+        		data[currIndex] = arr[i];
+        		printCombination(arr, data, i+1, end, currIndex+1, r);
+    		}
+		}
+
+		printCombination(arr, newArr, 0, arr.length-1, 0, 2);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

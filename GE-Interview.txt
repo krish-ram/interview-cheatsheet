@@ -1,0 +1,11 @@
+GE
+
+Given an array, find the smallest number which is not present in the array, and cannot be obtained as the sum of the subarray. (3pts- First round)  
+
+A function accepts 2 strings, but expects 2 numbers from the user. The function returns the sum of the numbers despite taking 2 strings as input. Therefore, when user enters 25, the function takes it as "25" (string). How do you make sure the user enters numbers and not alphabets.
+
+JS Event delegation What is Variable Hosting Design patterns Reverse a string using JS / Remove dups Closures
+
+Write the code to find the solution for the egg-drop puzzle, with variable number of eggs and floors  
+
+Singleton Pattern, Stategy Pattern, Template Pattern. Implement and Stack with a min() function that returns the minimum element in the stack. Given an array of numbers find the best possible solution to find all the pair of numbers that add up to a given sum Given a number find a way to circularly print all the numbers starting from 1 to the square of the number.
