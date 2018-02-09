@@ -1,5 +1,11 @@
 # 
 How do you find out the lightest stone from 9 similar looking stones in the shortest number of steps
+Ans: Divide the 9 balls into 3 groups of 3. Compare the weight of two of those groups. 
+
+The heavier group should then be obvious, it will either tip the scales, or, if the scales stay balanced, then it is the group you didn't include.
+
+Now, choose 2 balls from this group and compare their weights, and using the same logic as before, the heavier ball will be obvious.
+===========================================================================================================
 
 Write a program that prints out all possible pairs that can be formed from 20 dancers
 
